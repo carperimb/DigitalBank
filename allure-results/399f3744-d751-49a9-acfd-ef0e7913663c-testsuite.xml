@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1639609044819' stop='1639609050473'>
+    <name>OpenBank</name>
+    <title>OpenBank</title>
+    <test-cases>
+        <test-case start='1639609044819' status='passed' stop='1639609049906'>
+            <name>Debería mostrar la pagina login</name>
+            <title>Debería mostrar la pagina login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps>
+                <step start='1639609044895' status='passed' stop='1639609045423'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='91fc4538-3eba-4b5a-99b4-485d8946e124-attachment.json' type='application/json' size='47'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1639609049907' status='broken' stop='1639609050471'>
+            <name>Debería escribir usuario y contraseña e ingresar a home</name>
+            <title>Debería escribir usuario y contraseña e ingresar a home</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps>
+                <step start='1639609049909' status='passed' stop='1639609050196'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='fd8e5b58-f12a-4a8b-85a0-7b8b5af4fc2e-attachment.json' type='application/json' size='47'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1639609050198' status='passed' stop='1639609050460'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='12937c94-881b-4a2d-9a3e-63a0d11e253e-attachment.png' type='image/png' size='35166'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>(0 , _$.default)(...).getValue is not a function</message>
+                <stack-trace>TypeError: (0 , _$.default)(...).getValue is not a function
+                    at Context.&lt;anonymous> (C:\Users\cpi28\DigitalBank\tests\/login.test.js:14:40)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

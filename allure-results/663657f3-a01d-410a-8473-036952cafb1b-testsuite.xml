@@ -1,0 +1,71 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1639598879318' stop='1639598885133'>
+    <name>OpenBank</name>
+    <title>OpenBank</title>
+    <test-cases>
+        <test-case start='1639598879319' status='passed' stop='1639598884435'>
+            <name>Debería mostrar la pagina login</name>
+            <title>Debería mostrar la pagina login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps>
+                <step start='1639598879429' status='passed' stop='1639598880006'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='4ba83500-ddd9-48f3-829c-69a19d8e2a51-attachment.json' type='application/json' size='47'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1639598884436' status='broken' stop='1639598885131'>
+            <name>Debería escribir usuario y contraseña e ingresar a home</name>
+            <title>Debería escribir usuario y contraseña e ingresar a home</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps>
+                <step start='1639598884437' status='passed' stop='1639598884860'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='049e33e7-c29d-441d-9588-de6ae4d79ce1-attachment.json' type='application/json' size='47'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1639598884869' status='passed' stop='1639598885118'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='9f6e1332-d142-4ea7-8864-14df1c3d5aca-attachment.png' type='image/png' size='35166'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'isDevTools' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'isDevTools' of undefined
+                    at findElement (C:\Users\cpi28\DigitalBank\node_modules\webdriverio\build\utils\index.js:217:15)
+                    at $ (C:\Users\cpi28\DigitalBank\node_modules\webdriverio\build\commands\browser\$.js:88:43)
+                    at LoginPage.usuarioInput (C:\Users\cpi28\DigitalBank\pages\/login.page.js:7:31)
+                    at LoginPage.ingresar (C:\Users\cpi28\DigitalBank\pages\/login.page.js:19:55)
+                    at Context.&lt;anonymous> (C:\Users\cpi28\DigitalBank\tests\/login.test.js:15:25)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
