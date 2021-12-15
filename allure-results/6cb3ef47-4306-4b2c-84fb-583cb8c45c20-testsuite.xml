@@ -1,0 +1,70 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1639611145249' stop='1639611155816'>
+    <name>OpenBank</name>
+    <title>OpenBank</title>
+    <test-cases>
+        <test-case start='1639611145250' status='passed' stop='1639611150368'>
+            <name>Debería mostrar la pagina login</name>
+            <title>Debería mostrar la pagina login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps>
+                <step start='1639611145354' status='passed' stop='1639611145864'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='061065d6-4aa8-4952-bc39-0807ea449439-attachment.json' type='application/json' size='47'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1639611150368' status='passed' stop='1639611155814'>
+            <name>Debería escribir usuario y contraseña e ingresar a home</name>
+            <title>Debería escribir usuario y contraseña e ingresar a home</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps>
+                <step start='1639611150370' status='passed' stop='1639611150701'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='3d696c73-0042-43a4-94e5-b4aef76a6502-attachment.json' type='application/json' size='47'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1639611150715' status='passed' stop='1639611150770'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='92492a70-166e-4fdf-a080-ab3956c60f43-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='b387c100-6586-4a8d-b8b8-53a55362fbcf-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1639611150786' status='passed' stop='1639611150804'>
+                    <name>GET /session/:sessionId/element/22b8702b-c1f7-45c4-9ba0-998dd83e5961/property/placeholder</name>
+                    <title>GET /session/:sessionId/element/22b8702b-c1f7-45c4-9ba0-998dd83e5961/property/placeholder</title>
+                    <attachments>
+                        <attachment title='Response' source='186810a6-30c3-4307-93db-7c19bd2c8c6b-attachment.json' type='application/json' size='17'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
