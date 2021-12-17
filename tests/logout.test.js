@@ -1,6 +1,6 @@
 describe('OpenBank', () => {
 
-    it('Debería mostrar la pagina logout', async () => {
+    it('Should show logout page', async () => {
 
       //browser.url('login?logout');
 	  

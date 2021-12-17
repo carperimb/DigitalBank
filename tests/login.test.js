@@ -3,7 +3,7 @@ import loginPage from '../pages/login.page';
 
 describe('OpenBank', () => {
 
-    /* it('Debería mostrar la pagina login', async () => {
+    /* it('Should show login page', async () => {
 
       browser.url('login');
 	  
@@ -34,7 +34,19 @@ describe('OpenBank', () => {
         let contraseña = '123456';
         await loginPage.ingresar(usuario, contraseña);
         //await expect(await $('.badge badge-pill badge-danger').getText()).to.include.string('Error','Error: it did not show the expected text');
-        //await assert.equal(await $('span.badge badge-pill badge-danger').getText(),'Error','Error: it did not show the expected text');
+        //await assert.equal(await $('=http://localhost:8080/bank/login?error').getText(),'error','Error: it did not show the expected text');
+        //let mensajeError = await $('.badgebadge-pillbadge-danger');
+        //console.log(await mensajeError.getText());
         await browser.pause(5000);
-     })
+     });
+     it('Should show an error when atempting to login with blank username and password', async () => {
+        await loginPage.abrir('login');
+        let usuario = '';
+        let contraseña = '';
+        await loginPage.ingresar(usuario, contraseña);
+        //await expect(await $('.badge badge-pill badge-danger').getText()).to.include.string('Error','Error: it did not show the expected text');
+        //await assert.equal(await $('=http://localhost:8080/bank/login?error').getText(),'error','Error: it did not show the expected text');
+        
+        await browser.pause(5000);
+     });
  });
