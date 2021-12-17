@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"partial link text\",\"selector\":\"sufee-alert\"}\n  (Session info: chrome=96.0.4664.110)",
+  "stacktrace": "Backtrace:\n\tOrdinal0 [0x010C6903+2517251]\n\tOrdinal0 [0x0105F8E1+2095329]\n\tOrdinal0 [0x00F62848+1058888]\n\tOrdinal0 [0x00F8D448+1233992]\n\tOrdinal0 [0x00F8D63B+1234491]\n\tOrdinal0 [0x00FB7812+1406994]\n\tOrdinal0 [0x00FA650A+1336586]\n\tOrdinal0 [0x00FB5BBF+1399743]\n\tOrdinal0 [0x00FA639B+1336219]\n\tOrdinal0 [0x00F827A7+1189799]\n\tOrdinal0 [0x00F83609+1193481]\n\tGetHandleVerifier [0x01255904+1577972]\n\tGetHandleVerifier [0x01300B97+2279047]\n\tGetHandleVerifier [0x01156D09+534521]\n\tGetHandleVerifier [0x01155DB9+530601]\n\tOrdinal0 [0x01064FF9+2117625]\n\tOrdinal0 [0x010698A8+2136232]\n\tOrdinal0 [0x010699E2+2136546]\n\tOrdinal0 [0x01073541+2176321]\n\tBaseThreadInitThunk [0x75D5FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77107A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77107A6E+238]\n"
+}
