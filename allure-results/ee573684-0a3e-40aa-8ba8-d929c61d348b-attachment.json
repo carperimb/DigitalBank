@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": ".//url[normalize-space() = \"http://localhost:8080/bank/login?error\"]"
-}
