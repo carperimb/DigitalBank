@@ -1,12 +1,12 @@
 # DigitalBank
 Digital Bank is an example online digital banking application for exploratory purposes.
-### Getting Started
+## Getting Started
 * Clone [this repository](https://github.com/digisic/digitalbank-gen-one)
-### Prerequisites
+## Prerequisites
 * Install [Java SDK](https://openjdk.java.net/)
 * Install [Node.js](https://nodejs.org/download/release/v12.21.0/)
 * Install [Visual Studio Code](https://code.visualstudio.com/download)
-### Executing VSCode
+## Executing VSCode
 * Create a new folder and add it to the workspace
 * In a new terminal run: npm init 
 * Install WebdriverIO: npm install webdriverio --save-dev
@@ -14,7 +14,7 @@ Digital Bank is an example online digital banking application for exploratory pu
 * Create the configuration file: npx wdio config
 * Install Chai: npm install chai --save-dev
 * Install Chai-WebdriverIO: npm install chai-webdriverio --save-dev
-### Executing Tests
+## Executing Tests
 * Change the file wdio.conf.js: specs './tests/**/*.js'
 * Add in package.json: "test": "wdio ./wdio.conf.js"
 * JUnit Tests - Execute "npm run test"
