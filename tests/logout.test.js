@@ -4,6 +4,6 @@ describe('OpenBank', () => {
 
       //browser.url('login?logout');
 	  
-	  await browser.pause(5000);
+	  //await browser.pause(5000);
     });
  });

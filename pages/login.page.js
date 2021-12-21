@@ -4,29 +4,31 @@ import BasePage from '../pages/base.page';
 class LoginPage extends BasePage {
 
    //WebElements
-   get usuarioInput(){ return $('[name="username"]') }
-   get contraseñaInput(){return $('[name="password"]')}
+   get usernameInput(){ return $('#username') }
+   get passwordInput(){return $('#password')}
 
 
    //-------------------------------------------------------------------------------------------------------//
 
    /**
-    * Escribe el usuario y la contraseña en los campos y presiona Enter
-    * @param {String} usuario 
-    * @param {String} contraseña
+    * Write username and password and press Enter
+    * @param {String} username 
+    * @param {String} password
     */
-   async ingresar(usuario, contraseña) {
-       await super.vaciarCampoYEnviarTexto(await this.usuarioInput, usuario);
-       await super.vaciarCampoYEnviarTexto(await this.contraseñaInput, contraseña);
-       await this.contraseñaInput.keys('Enter');
+   async enter(username, password) {
+       await super.sendText(await this.usernameInput, username);
+       await super.sendText(await this.passwordInput, password);
+       await this.passwordInput.keys('Enter');
    }
 
    /**
-    * Obtener texto del usuario
+    * Get username
     */
-   async obtenerTextoUsuario() {
-       return await this.usuarioInput.getValue();
+   async getUsername() {
+       return await this.usernameInput.getValue();
    }
+
+   
 
 
 }
