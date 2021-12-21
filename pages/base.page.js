@@ -14,7 +14,7 @@ export default class BasePage {
 
    /**
     * Wait for an element to be clickable
-    * @param {Object} element a clickear
+    * @param {Object} element to be clickable
     */
    async clickElement(element) {
        await element.waitForClickable({ timeout: PAGE_TIMEOUT });
@@ -24,8 +24,8 @@ export default class BasePage {
 
    /**
     * Send text method
-    * @param {Object} element que recibirá el texto
-    * @param {String} text a envíar 
+    * @param {Object} element 
+    * @param {String} text  
     */
    async sendText(element, text){
        await element.waitForClickable({ timeout: PAGE_TIMEOUT });
@@ -38,7 +38,7 @@ export default class BasePage {
     */
     async checkExpectedError(ruta){
        //await browser.getUrl(ruta);
-       return this.browser.url(ruta);
+       return this.browser.url(ruta); 
     }
 
 

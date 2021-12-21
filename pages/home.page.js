@@ -7,7 +7,7 @@ class HomePage extends BasePage {
 
     //Get Dashboard title
     async getDashboardTitle(){
-        return await this.title.getValue();
+        return await this.title.getText();
     }
 }
 export default new HomePage();
