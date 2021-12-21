@@ -7,8 +7,8 @@ export default class BasePage {
     * Open url
     * 
     */
-   async open(ruta) {
-       await browser.url(ruta);
+   async open(path) {
+       await browser.url(path);
    }
 
 
@@ -33,13 +33,7 @@ export default class BasePage {
        await element.setValue(text);
    }
 
-   /**
-    * Check expected error 
-    */
-    async checkExpectedError(ruta){
-       //await browser.getUrl(ruta);
-       return this.browser.url(ruta); 
-    }
+   
 
 
 }
