@@ -15,7 +15,7 @@ class LoginPage extends BasePage {
     * @param {String} username 
     * @param {String} password
     */
-   async enter(username, password) {
+   async logIn(username, password) {
        await super.sendText(await this.usernameInput, username);
        await super.sendText(await this.passwordInput, password);
        await this.passwordInput.keys('Enter');
