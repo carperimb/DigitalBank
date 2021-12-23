@@ -33,7 +33,7 @@ describe('OpenBank', () => {
         let password = '';
         await loginPage.logIn(username, password);
         
-        expect(await browser.getUrl()).to.contain('login?error');//await expect(browser).toHaveUrlContaining('login?error');
+        expect(await browser.getUrl()).to.contain('login?error');
         
         
      });

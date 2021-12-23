@@ -1,4 +1,4 @@
-//import $ from 'webdriverio/build/commands/browser/$';
+
 import BasePage from '../pages/base.page';
 
 class LoginPage extends BasePage {
