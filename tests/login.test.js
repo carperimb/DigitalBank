@@ -23,8 +23,7 @@ describe('OpenBank', () => {
         let password = '123456';
         await loginPage.logIn(username, password);
         expect(await browser.getUrl()).to.contain('login?error');
-        //expect(await browser.getUrl()).to.equal('http://localhost:8080/bank/login?error');
-        //await expect(browser).toHaveUrlContaining('login?error');
+        
         
      });
      it('Should show an error when attempting to login with blank credentials', async () => {
@@ -34,8 +33,7 @@ describe('OpenBank', () => {
         let password = '';
         await loginPage.logIn(username, password);
         
-        expect(await browser.getUrl()).to.contain('login?error');
-        //await expect(browser).toHaveUrlContaining('login?error');
+        expect(await browser.getUrl()).to.contain('login?error');//await expect(browser).toHaveUrlContaining('login?error');
         
         
      });

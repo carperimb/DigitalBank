@@ -8,16 +8,10 @@ Digital Bank is an example online digital banking application for exploratory pu
 * Install [Visual Studio Code](https://code.visualstudio.com/download)
 ## Executing VSCode
 * Create a new folder and add it to the workspace
-* In a new terminal run: npm init 
-* Install WebdriverIO: npm install webdriverio --save-dev
-* Install the client: npm install @wdio/cli
-* Create the configuration file: npx wdio config
-* Install Chai: npm install chai --save-dev
-* Install Chai-WebdriverIO: npm install chai-webdriverio --save-dev
+* In a new terminal run: npm install 
+
 ## Executing Tests
-* Change the file wdio.conf.js: specs './tests/**/*.js'
-* Add in package.json: "test": "wdio ./wdio.conf.js"
-* JUnit Tests - Execute "npm run test"
+* Execute "npm run test"
 ## Deployment
 Digital Bank can be deployed as a single standalone application service or be deployed and configured to integrate with Digital Credit.
 * Docker Compose Deployment
