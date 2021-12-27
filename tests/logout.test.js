@@ -1,4 +1,4 @@
-//import $ from 'webdriverio/build/commands/element/$';
+
 import loginPage from '../pages/login.page';
 import logoutPage from '../pages/logout.page';
 
@@ -12,10 +12,7 @@ describe('OpenBank', () => {
       await loginPage.logIn(username, password);
 
       await logoutPage.clickAvatar();
-      //let userImage = await $('[class="user-avatar rounded-circle"]');
-      //await userImage.click();
-      //let dropdownMenu = await $('=Logout');
-      //await dropdownMenu.click();
+      
       expect(await browser.getUrl()).to.contain('login?logout');
 
     });
@@ -26,9 +23,9 @@ describe('OpenBank', () => {
       await loginPage.logIn(username, password);
 
       await logoutPage.clickAvatar();
-      //await browser.pause(3000);
+      
       await browser.back();
-      //await backBu.click();
+      
       expect(await browser.getUrl()).to.contain('login');
 
 
