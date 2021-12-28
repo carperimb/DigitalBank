@@ -1,10 +1,12 @@
 
 
+
 import BasePage from '../pages/base.page';
 
 class LogoutPage extends BasePage {
     //WebElements
-    get userAvatar(){return $('[class="user-avatar rounded-circle"]')};
+    
+    get userAvatar(){return $('.user-avatar');}
     get logoutItem(){return $('=Logout')};
 
     /**
