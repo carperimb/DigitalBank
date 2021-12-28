@@ -74,13 +74,6 @@ exports.config = {
     // ===================
     // Define all options that are relevant for the WebdriverIO instance here
     //
-    beforeTest: function (test, context) {
-        const chai = require('chai');
-        const chaiWebdriver = require('chai-webdriverio').default;
-        chai.use(chaiWebdriver(browser));
-        global.assert = chai.assert;
-        global.expect = chai.expect;
-     },
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'info',
     //
