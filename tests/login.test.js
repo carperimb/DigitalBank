@@ -6,7 +6,7 @@ import { expect } from 'chai';
 describe('OpenBank', () => {
 
     
-    it.skip('Should access the home page when attempting to login with valid credentials', async () => {
+    it('Should access the home page when attempting to login with valid credentials', async () => {
         await loginPage.open('login');
         let username = 'jsmith@demo.io';
         let password = 'Demo123!';
@@ -16,7 +16,7 @@ describe('OpenBank', () => {
         expect(await homePage.getDashboardTitle()).to.equal('Dashboard');
         
      });
-     it.skip('Should show an error when attempting to login with invalid credentials', async () => {
+     it('Should show an error when attempting to login with invalid credentials', async () => {
         await loginPage.open('login');
         
         let username = 'asdfasdf';
@@ -26,7 +26,7 @@ describe('OpenBank', () => {
         
         
      });
-     it.skip('Should show an error when attempting to login with blank credentials', async () => {
+     it('Should show an error when attempting to login with blank credentials', async () => {
         await loginPage.open('login');
         
         let username = '';
