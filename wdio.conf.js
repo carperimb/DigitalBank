@@ -23,6 +23,13 @@ exports.config = {
     specs: [
         './tests/**/*.js'
     ],
+    // define specific suites
+    suites: {
+        login: ['./tests/**/login.test.js'],
+        logout: ['./tests/**/logout.test.js'],
+        savings: ['./tests/**/savings.test.js'],
+        newsavings: ['./tests/**/newsavings.test.js'],
+    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'

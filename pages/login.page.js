@@ -28,8 +28,5 @@ class LoginPage extends BasePage {
        return await this.usernameInput.getValue();
    }
 
-   
-
-
 }
 export default new LoginPage();
